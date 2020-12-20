@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+section {
+  position: relative;
+  max-width: 100%;
+  height: 90vh;
+  background: url('../image/background.jpg') no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+
+}
+header {
+  position: fixed;
+  padding: 0 100px;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  transition: .5s;
+}
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  float: right;
+  transition: .5s;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+  transition: .5s;
+}
+ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+header ul li ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+header ul li:hover ul {
+  display:block;
+  
+}
+.toggle {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  background: #f00;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .toggle {
+    display: block;
+  }
+  header {
+    padding: 0 0;
+    background: rgba(255,255,255,.5);
+  }
+  header ul {
+    width: 100%;
+    top: -4px;
+    display: none;
+  }
+  header ul.active {
+    display: block;
+  }
+  header ul li a {
+    margin: 0;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0, .2);
+  }
+.logo {
+  width: 120px;
+  height: 120px;
+}
+}
+.sec1 {
+  margin-top: 50px;
+}
+.sec1 p {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+.sec1 h1 {
+  text-align: center;
+}
+.sec h2 {
+  position: absolute;
+  text-align: center;
+}
+.sec2 {
+  text-align: center;
+}
+
+.button button {
+  text-align: center;
+  
+  display: inline-block;
+  padding: 6px 6px;
+  margin: 0px 20;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: linear-gradient(90deg,#F3DC4C,#847930)
+  
+
+}
+input[type=text], 
+select, textarea {
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+h3{
+  text-align: center;
+}
+
+input[type=reset] {
+  text-align: center;
+
+  background-color: lightblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.country {
+  
+}
+.container {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.button {
+  text-align: center;
+}
+
+.assignment1 a{
+  text-align: center;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 10px 20px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+  transition: .5s;
+}
+#footer{
+  width: 100%;
+  height: 10px;
+  min-height: 20px;
+  background: #f9e572;
+  border-top: 2px thin #f9e572;
+  position: : absolute;
+  margin-top: 30px;
+  margin-top: 0%;
+  margin-right: 7%;
+  bottom: 1;
+
+}
+#footer p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 90%;
+}
+
